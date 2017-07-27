@@ -6,7 +6,7 @@ Aplikacja stworzona na potrzeby Workshop #2 dla Asseco Poland S.A.
 
 ## Zakres funkcjonalności projektu
 
-* [ ] KOnfiguracja loggera
+* [ ] Konfiguracja loggera
 * [ ] Przygotowanie podstawowego modułu obliczeniowego
 * [ ] Przygotowanie klasy aspect
 * [ ] Przygotowanie wszytskich advices z szablonu AOP
