@@ -24,7 +24,7 @@ public class FileAdderProvider implements AdderProvider {
     }
 
     @Override
-    @LoggingObject
+    //@LoggingObject
     public ArrayList<Integer> getItems() {
 
         //System.out.println("Instancja FileAdderProvider-a " + hashCode());

@@ -3,6 +3,7 @@ package pl.asseco.workshop.calculationModule.Services;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import pl.asseco.workshop.calculationModule.Aspects.LoggingObject;
 
 /**
  * Created by krzysztof.bogucki on 24 lip 2017.
@@ -15,16 +16,14 @@ public class AdderService {
     @Autowired
     private AdderProvider adderProvider;
 
-    public Integer sum(){
+    @LoggingObject
+    public void sum(){
 
         Integer sum = 0;
         for (Integer item: adderProvider.getItems()) {
             sum += item;
         }
-
         logger.info("Obliczono sumę w serwisie i wynosi ona " + sum.toString());
-
-        return sum;
     }
 
 }

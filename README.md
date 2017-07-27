@@ -6,12 +6,22 @@ Aplikacja stworzona na potrzeby Workshop #2 dla Asseco Poland S.A.
 
 ## Zakres funkcjonalności projektu
 
+* [ ] KOnfiguracja loggera
 * [ ] Przygotowanie podstawowego modułu obliczeniowego
-* [ ] Przygotowanie podstawowego modułu obliczeniowego
+* [ ] Przygotowanie klasy aspect
+* [ ] Przygotowanie wszytskich advices z szablonu AOP
 
 
 ## O czym powiedzieć
 - Warsztaty, część praktyczna
+- Prezentacja szablonu AOP
+    - Adnotacja @Pointcut
+- Prezentacja Advices (org.aspectj.lang.annotation)
+    - @Before
+    - @After
+    - @AfterReturning
+    - @Around
+- Prezentacja obiektu proxy podczas debugowania metod owiniętych aspektem
 
     
     

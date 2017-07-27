@@ -40,17 +40,27 @@ public class LoggingAspect {
     }
 
     @Around("loggingAnnotation()")
-    public Object logExecutionTime(ProceedingJoinPoint proceedingJoinPoint) throws Throwable{
+    public Object logExecutionTime(ProceedingJoinPoint proceedingJoinPoint) {
 
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
+        try {
 
-        Object methodExecutionResult = proceedingJoinPoint.proceed();
+            Object methodExecutionResult = proceedingJoinPoint.proceed();
 
-        stopWatch.stop();
-        logger.info("Time execution method [" + proceedingJoinPoint.getSignature().getName() + "] : " + stopWatch.getLastTaskTimeMillis() + "ms");
+            stopWatch.stop();
+            logger.info("Time execution method [" + proceedingJoinPoint.getSignature().getName() + "] : " + stopWatch.getLastTaskTimeMillis() + "ms");
 
-        return methodExecutionResult;
+            return methodExecutionResult;
+        } catch (Throwable ex) {
+
+            stopWatch.stop();
+
+            logger.info("Time execution method [" + proceedingJoinPoint.getSignature().getName() + "] : " + stopWatch.getLastTaskTimeMillis() + "ms");
+            logger.warn("Method has been throwable [" + proceedingJoinPoint.getSignature().getName() + "] : " + ex.getMessage());
+
+            return null;
+        }
     }
 
 }
