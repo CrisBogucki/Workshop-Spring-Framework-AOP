@@ -9,7 +9,7 @@ Aplikacja stworzona na potrzeby Workshop #2 dla Asseco Poland S.A.
 * [ ] Konfiguracja loggera
 * [ ] Przygotowanie podstawowego modułu obliczeniowego
 * [ ] Przygotowanie klasy aspect
-* [ ] Przygotowanie wszytskich advices z szablonu AOP
+* [ ] Przygotowanie wszystkich advices z szablonu AOP
 
 
 ## O czym powiedzieć
