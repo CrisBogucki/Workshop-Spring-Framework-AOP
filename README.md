@@ -1,6 +1,6 @@
 # Workshop Java Spring Freamework - Aspect Oriented Programming
 
-Aplikacja stworzona na potrzeby Workshop #2 dla Asseco Poland S.A.
+Aplikacja stworzona na potrzeby Workshop 
 
 ![](https://dzone.com/storage/temp/2443415-spring-aspect-oriented-programming-by-java.jpg)
 
